@@ -1,7 +1,7 @@
 :root {
-  --page-background: #101212;
-  --card-background: rgb(27, 29, 29);
-  --text-color: rgb(247, 247, 247);
+  --page-background: rgb(223, 222, 222);
+  --card-background: rgb(244, 243, 243);
+  --text-color: rgb(30, 29, 29);
   --accent: #ff725e;
 }
 
@@ -40,6 +40,7 @@ main {
 
 button {
   background-color: var(--accent);
+  color: var(--card-background);
   border: 0;
   border-radius: 10px;
   padding: 15px;
@@ -76,11 +77,10 @@ nav ul li a {
 
 .card {
   background-color: var(--card-background);
-  padding: 30px;
+  padding: 30px 35px;
   min-width: 500px;
-  box-shadow: 5px 5px 15px black;
+  box-shadow: 5px 5px 15px lightgray;
   border-radius: 15px;
-  margin: 50px 0;
 }
 
 .columns {

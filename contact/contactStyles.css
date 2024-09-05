@@ -6,7 +6,7 @@ input,
 textarea {
   border-radius: 5px;
   border: 0;
-  background-color: var(--text-color);
+  background-color: var(--page-background);
   width: 100%;
   padding: 5px 15px;
 }
@@ -19,8 +19,10 @@ input {
   margin: 25px 0;
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 
 .form-element label {
   width: 130px;
+  font-weight: bold;
 }
