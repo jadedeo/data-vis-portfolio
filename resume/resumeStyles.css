@@ -1,0 +1,15 @@
+.resume-item h1,
+.resume-item h3 {
+  margin: 0;
+}
+
+.card.resume-item {
+  margin: unset;
+}
+
+.resume-experiences {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 50px;
+}

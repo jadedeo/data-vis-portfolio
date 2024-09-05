@@ -1,0 +1,24 @@
+h2 {
+  margin-top: 0;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 25px;
+}
+
+.gallery-item {
+  min-width: unset;
+  max-width: 25%;
+}
+
+.launch-cta {
+  text-align: right;
+  font-weight: bold;
+}
+
+p.launch-cta a {
+  color: var(--text-color);
+  text-decoration: none;
+}

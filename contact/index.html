@@ -12,43 +12,60 @@
       <nav>
         <ul>
           <li><a href="../index.html">Home</a></li>
+          <li><a href="../projects/index.html">Projects</a></li>
+          <li><a href="../contact/index.html">Contact</a></li>
+          <li><a href="../resume/index.html">Resume</a></li>
           <li>
             <a href="https://github.com/jadedeo" target="_blank"
               >GitHub Profile</a
             >
           </li>
-          <li><a href="../projects/index.html">Projects</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="../resume/index.html">Resume</a></li>
         </ul>
       </nav>
-
-      <h1>Contact</h1>
     </header>
 
-    <section>
-      <form
-        action="mailto:jadedeo@gmail.com"
-        method="post"
-        encytpe="text/plain"
-      >
-        <div class="form-element">
-          <label for="email"
-            >Email <input type="email" name="email" id="email"
-          /></label>
+    <main>
+      <!-- <div class="non-card-container">
+        <h1>Contact</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+          consectetur aspernatur inventore laudantium nisi alias iusto
+          temporibus recusandae in quidem.
+        </p>
+      </div> -->
+
+      <div class="columns card">
+        <div class="column">
+          <h1>Contact</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+            consectetur aspernatur inventore laudantium nisi alias iusto
+            temporibus recusandae in quidem.
+          </p>
+          <form
+            action="mailto:jadedeo@gmail.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <div class="form-element">
+              <label for="email">Email:</label>
+              <input id="email" type="email" />
+            </div>
+            <div class="form-element">
+              <label for="subject">Subject:</label>
+              <input id="subject" />
+            </div>
+            <div class="form-element">
+              <label for="message">Message:</label>
+              <textarea id="message" rows="5"></textarea>
+            </div>
+            <button>Submit</button>
+          </form>
         </div>
-        <div class="form-element">
-          <label for="subject"
-            >Subject <input name="subject" id="subject"
-          /></label>
+        <div class="column">
+          <img src="../images/mail.png" />
         </div>
-        <div class="form-element">
-          <label for="body"
-            >Body <textarea rows="5" placeholder=""></textarea>
-          </label>
-        </div>
-        <button>Submit</button>
-      </form>
-    </section>
+      </div>
+    </main>
   </body>
 </html>
