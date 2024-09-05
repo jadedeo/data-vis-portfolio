@@ -1,5 +1,7 @@
 form {
-  margin: 50px 0 20px 0;
+  margin: 30px 0 20px 0;
+  gap: 15px;
+  display: grid;
 }
 
 input,
@@ -7,7 +9,6 @@ textarea {
   border-radius: 5px;
   border: 0;
   background-color: var(--page-background);
-  width: 100%;
   padding: 5px 15px;
 }
 
@@ -16,13 +17,11 @@ input {
 }
 
 .form-element {
-  margin: 25px 0;
-  display: flex;
-  gap: 10px;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 90px auto;
+  grid-column: 1 / -1;
 }
 
 .form-element label {
-  width: 130px;
   font-weight: bold;
 }

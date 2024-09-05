@@ -1,25 +1,30 @@
 h2 {
   margin-top: 0;
 }
+
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  row-gap: 15px;
   margin: 50px 0;
+  gap: 15px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+  @media screen and (max-width: 769px) {
+    grid-template-columns: auto auto;
+  }
+
+  @media screen and (max-width: 480px) {
+    grid-template-columns: auto;
+  }
 }
 
 .gallery-item {
   min-width: unset;
-  max-width: 25%;
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 2;
 }
 
 .launch-cta {
   text-align: right;
   font-weight: bold;
-}
-
-p.launch-cta a {
-  color: var(--text-color);
-  text-decoration: none;
 }
