@@ -8,7 +8,7 @@ input,
 textarea {
   border-radius: 5px;
   border: 0;
-  background-color: var(--page-background);
+  background-color: color-mix(in oklch, var(--page-background), canvas 55%);
   padding: 5px 15px;
 }
 

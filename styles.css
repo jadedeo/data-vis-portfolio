@@ -1,6 +1,7 @@
 :root {
   --page-background: #dfdede;
   --card-background: #f4f3f3;
+  --card-shadow: rgba(0, 0, 0, 0.1);
   --text-color: #1e1d1d;
   --accent: #ff725e;
 }
@@ -10,7 +11,11 @@ body {
   font: 100%/1.5 system-ui;
   background-color: var(--page-background);
   margin: 0;
-  color: var(--text-color);
+  /* color: var(--text-color); */
+
+  background-color: color-mix(in oklch, var(--page-background), canvas 65%);
+  color: CanvasText;
+  color-scheme: dark;
 }
 
 body,
@@ -40,7 +45,7 @@ main {
 
 button {
   background-color: var(--accent);
-  color: var(--card-background);
+  color: color-mix(in oklch, var(--card-background), canvas 85%);
   border: 0;
   border-radius: 10px;
   padding: 15px;
@@ -67,15 +72,26 @@ nav {
   margin: 0 5%;
 }
 
-nav ul {
+/* nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: end;
+  gap: 3%;
+} */
+
+nav {
   list-style-type: none;
   display: flex;
   justify-content: end;
   gap: 3%;
 }
 
-nav ul li {
+nav a {
   font-weight: bold;
+}
+
+nav a.current {
+  color: var(--accent);
 }
 
 /* CONTAINERS */
@@ -85,9 +101,11 @@ nav ul li {
 }
 
 .card {
-  background-color: var(--card-background);
+  background-color: color-mix(in oklch, var(--card-background), canvas 70%);
+  /* background-color: var(--card-background); */
   padding: 30px 35px;
-  box-shadow: 5px 5px 10px rgb(189, 189, 189);
+  /* box-shadow: 5px 5px 10px rgb(189, 189, 189); */
+  box-shadow: 5px 5px 10px color-mix(in oklch, var(--card-shadow), canvas 30%);
   border-radius: 15px;
   max-width: 920px;
 }
