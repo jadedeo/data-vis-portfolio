@@ -15,12 +15,24 @@ body {
 
   background-color: color-mix(in oklch, var(--page-background), canvas 65%);
   color: CanvasText;
-  color-scheme: dark;
 }
 
 body,
 html {
   height: 100%;
+}
+
+.color-scheme {
+  position: absolute;
+  top: 75px;
+  right: 5%;
+}
+
+select {
+  border: 0;
+  padding: 5px 10px;
+  background-color: color-mix(in oklch, var(--card-background), canvas 75%);
+  border-radius: 5px;
 }
 
 img {
@@ -40,7 +52,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: calc(100% - 64px);
+  min-height: calc(100% - 75px);
 }
 
 button {
@@ -69,7 +81,7 @@ a:hover {
 /* NAVBAR */
 nav {
   padding: 4px;
-  margin: 0 5%;
+  margin: 25px 5%;
 }
 
 /* nav ul {
@@ -101,7 +113,7 @@ nav a.current {
 }
 
 .card {
-  background-color: color-mix(in oklch, var(--card-background), canvas 70%);
+  background-color: color-mix(in oklch, var(--card-background), canvas 75%);
   /* background-color: var(--card-background); */
   padding: 30px 35px;
   /* box-shadow: 5px 5px 10px rgb(189, 189, 189); */
